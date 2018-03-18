@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="101.931" y="173.887" width="310.37" height="51.29" style="fill: rgb(34, 192, 87);" rx="5.892" ry="5.892" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <rect x="87.699" y="271.616" width="310.37" height="51.29" style="fill: rgb(34, 192, 87);" rx="5.892" ry="5.892" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <path d="M 199.078 394.826 L 158.062 394.826 L 199.794 103.748 L 238.84 103.748 Z" style="stroke-linecap: round; stroke-width: 16; stroke-linejoin: round; stroke-dashoffset: 6; stroke: rgb(38, 205, 93); fill: rgb(38, 205, 93);" transform="matrix(0.9999110102653503, 0.013343000784516335, -0.013343000784516335, 0.9999110102653503, 3.343861103057918, -2.6257081031799316)"/>
+  <path d="M 301.681 396.251 L 260.665 396.251 L 302.397 105.173 L 341.443 105.173 Z" style="stroke-linecap: round; stroke-width: 16; stroke-linejoin: round; stroke-dashoffset: 6; stroke: rgb(38, 205, 93); fill: rgb(38, 205, 93);" transform="matrix(0.9999110102653503, 0.013343000784516335, -0.013343000784516335, 0.9999110102653503, 3.3721029758453938, -3.9947049617767334)"/>
+</svg>

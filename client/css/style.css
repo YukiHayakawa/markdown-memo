@@ -1,0 +1,374 @@
+body {
+  background: #efefef;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+
+.header {
+  .nav {
+    background-color: #333;
+    position: static;
+  }
+
+  .toolBar {
+    padding: 0 12px;
+  }
+
+  .headerIcon {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .searchBox {
+    flex: 1;
+  }
+
+  .searchInputBox {
+    width: 600px;
+    max-width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+
+  .suggest {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 44px;
+  }
+
+  .searchInput {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.54);
+    border-radius: 4px;
+
+    .searchIcon {
+      position: relative;
+      top: 0;
+      left: 16px;
+      margin-right: 20px;
+      z-index: 2;
+    }
+
+    input {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      width: auto;
+      z-index: 1;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.54);
+    }
+  }
+
+  .logoBox {
+    width: auto;
+    padding: 0 20px 0 12px;
+  }
+
+  .logo {
+    display: block;
+    background: url('../img/logo.svg') no-repeat;
+    background-size: 36px;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    margin-top: -3px;
+    overflow: hidden;
+    padding: 0 12px 0 44px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  margin-left: -25px;
+
+  svg {
+    color: #27cd5d;
+  }
+}
+
+.editorNav {
+  padding: 4px 0;
+  margin: 0 12px 12px;
+  border-bottom: solid 1px #efefef;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navBtn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.main,
+.sideNav {
+  min-height: 1400px;
+}
+
+.contents {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .sideNav {
+    width: 200px;
+    background: #fafafa;
+    border-right: solid 1px #efefef;
+
+    .listIcon {
+      margin-right: 0;
+      width: 24px;
+      height: 24px;
+
+      &.close {
+        transform: rotate(-90deg);
+      }
+    }
+
+    .dir {
+      padding: 8px 12px 8px 4px;
+
+      &.active {
+        background: rgba(0, 0, 0, 0.06);
+      }
+    }
+
+    .dirText,
+    .listFileText {
+      p {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+      }
+    }
+
+    .dirText {
+      padding-left: 4px;
+    }
+
+    .list {
+      padding: 8px 12px;
+    }
+
+    .listFile {
+      &.active {
+        .listFileText p {
+          color: #27cd5d;
+        }
+      }
+    }
+
+    .editItem {
+      width: 100%;
+      height: 28px;
+      border-radius: 4px;
+      border: solid 1px #27cd5d;
+      padding: 4px 8px;
+      box-sizing: border-box;
+    }
+
+    .listBlock {
+      .listBlock {
+        padding-left: 24px;
+      }
+
+      .listFile {
+        padding-left: 32px;
+      }
+    }
+  }
+
+  .sideNavLists {
+    padding-top: 4px;
+  }
+
+  .listHeader {
+    display: flex;
+
+    .listHeaderLabel {
+      flex: 1;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    .listHeaderIcon {
+      width: 32px;
+      height: 36px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .resize {
+    resize: horizontal;
+    overflow: hidden;
+  }
+}
+
+.main {
+  flex: 1;
+  background: #fff;
+  overflow: auto;
+  position: relative;
+
+  .mainView {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .home {
+    color: #666;
+    padding: 8px 24px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .notfile-text {
+    color: #666;
+    padding: 8px 24px;
+  }
+
+  span {
+    word-wrap: break-word;
+  }
+
+  .grid {
+    width: 50%;
+    flex: 1 auto;
+    padding-bottom: 20px;
+    border-right: solid 1px #efefef;
+  }
+
+  .preview,
+  .editor {
+    min-height: 1400px;
+    padding: 4px 16px 16px;
+    display: block;
+  }
+
+  .editor {
+    position: relative;
+
+    .markdownStyle {
+      opacity: 0.2;
+    }
+
+    ul,
+    ol {
+      padding-left: 0 !important;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    pre {
+      padding-top: 12px;
+      padding-bottom: 4px;
+
+      > pre {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      }
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      padding: 0.2em 0.4em;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(27, 31, 35, 0.05);
+      border-radius: 3px;
+    }
+
+    .del {
+      text-decoration: line-through;
+    }
+
+    blockquote {
+      border-left: none;
+      padding: 0;
+      margin-bottom: 0;
+      color: #000;
+    }
+
+    .public-DraftEditorPlaceholder-root {
+      color: #ccc;
+      position: absolute;
+      left: 16px;
+      top: 4px;
+    }
+  }
+}
+
+.error {
+  text-align: center;
+
+  .nav {
+    padding: 16px 0;
+  }
+
+  .logo {
+    width: 182px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 20px;
+    display: block;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .icon {
+    font-size: 120px;
+    color: #999;
+    margin: 32px 0 16px;
+  }
+
+  .text {
+    margin-bottom: 32px;
+    color: #666;
+  }
+
+  .button {
+    color: #fff;
+    background: #000;
+  }
+}
