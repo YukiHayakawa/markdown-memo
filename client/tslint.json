@@ -1,0 +1,66 @@
+{
+  "extends": ["tslint-config-airbnb", "tslint-react"],
+  "rules": {
+    "max-line-length": {
+      "options": [120]
+    },
+    "new-parens": true,
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false,
+        "afterColon": true,
+        "mode": "minimum"
+      }
+    ],
+    "no-irregular-whitespace": true,
+    "no-var": [
+      "error"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true,
+        "allowAfterSuper": true
+      }
+    ],
+    "indent": [true, "spaces", 2],
+    "linebreak-style": [true, "LF"],
+    "jsx-wrap-multiline": false,
+    "jsx-no-multiline-js": false,
+    "import-name": false,
+    "member-access": [true],
+    "no-empty-interface": true,
+    "interface-name": [true, "never-prefix"],
+    "no-namespace": true,
+    // "no-any": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "valiable-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring"
+    ],
+    "typedef-whitespace": [
+      true
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-snake-case"
+    ]
+  }
+}
