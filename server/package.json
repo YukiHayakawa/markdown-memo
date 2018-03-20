@@ -1,0 +1,25 @@
+{
+  "name": "markdown-memo-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "forever start src/index.js",
+    "restart": "forever restart src/index.js",
+    "build": "tsc -p tsconfig.json",
+    "stop": "forever stop 0",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "find-in-files": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "forever": "^0.15.3",
+    "nodemon": "^1.17.2",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  }
+}
