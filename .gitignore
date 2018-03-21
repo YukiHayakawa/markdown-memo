@@ -1,4 +1,16 @@
-data
+# Node
 node_modules
+
+# yarn
 yarn-error.log
-yarn.log
+yarn.lock
+
+# app
+data
+
+# client
+client/public/assets/js
+
+# server
+server/markdown/*
+server/public/*
