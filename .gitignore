@@ -14,3 +14,6 @@ client/public/assets/js
 # server
 server/markdown/*
 server/public/*
+
+# config
+config
