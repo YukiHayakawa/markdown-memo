@@ -158,7 +158,7 @@ export function updateNavLists(url: string, param: any): any {
   // console.log(url, param);
   return (dispatch: any): any => {
     dispatch(updateNavLoading());
-    return fetch(url, {
+    return fetch(`${api}${url}`, {
       method: 'POST',
       body: JSON.stringify(param),
       headers: new Headers({ 'Content-type': 'application/json' }),

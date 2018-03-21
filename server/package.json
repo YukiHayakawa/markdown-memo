@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "forever start src/index.js",
-    "restart": "forever restart src/index.js",
+    "start": "forever start public/index.js && forever --fifo logs 0",
+    "restart": "forever restart public/index.js && forever --fifo logs 0",
     "build": "tsc -p ./tsconfig.json",
     "stop": "forever stop 0",
     "dev": "nodemon --exec ts-node src/index.ts"

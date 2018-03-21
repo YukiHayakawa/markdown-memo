@@ -60,7 +60,7 @@ class Main extends React.Component<Props> {
      */
     const onTextSave = (e: Draft.EditorState): void => {
       if (activeFile && activeFile !== '' && loading === false) {
-        dispatch(updateNavLists('/updateFile/', { path: activeFile, text: getText(e) }));
+        dispatch(updateNavLists('updateFile/', { path: activeFile, text: getText(e) }));
       }
     };
     /**

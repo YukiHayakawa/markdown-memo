@@ -82,15 +82,15 @@ class SideNavLists extends React.Component<Props> {
     if (add && e.currentTarget.value !== '') {
       if (type === 'file') {
         history.push(`?file=${e.currentTarget.dataset.path + e.currentTarget.value}`);
-        onUpdateNavLists('/updateFile/', { path });
+        onUpdateNavLists('updateFile/', { path });
       } else {
-        onUpdateNavLists('/addDir/', { path });
+        onUpdateNavLists('addDir/', { path });
       }
     } else if (!add && path !== e.currentTarget.dataset.name) {
       if (type === 'file') {
         history.push(`?file=${e.currentTarget.dataset.path + e.currentTarget.value}`);
       }
-      onUpdateNavLists('/rename/', { before: e.currentTarget.dataset.name, after: path });
+      onUpdateNavLists('rename/', { before: e.currentTarget.dataset.name, after: path });
     }
     this.props.onUpdateEdit({
       beforeName: '',

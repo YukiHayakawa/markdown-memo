@@ -8,9 +8,9 @@ import * as postcssNested from 'postcss-nested';
 import * as dotenv from 'dotenv';
 const siteConfigEnv = dotenv.config({ path: path.resolve('../config/.env') });
 const siteConfig = {
-  name: siteConfigEnv.parsed['NAME'],
-  defaultDir: siteConfigEnv.parsed['DEFAULT_DIR'],
-  api: siteConfigEnv.parsed['API'],
+  name: siteConfigEnv.parsed['NAME'] || 'http://localhost:3030/',
+  defaultDir: siteConfigEnv.parsed['DEFAULT_DIR'] || 'markdown/',
+  api: siteConfigEnv.parsed['API'] || 'Markdown memo',
 };
 
 const PORT = 8088;
