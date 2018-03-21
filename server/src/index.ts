@@ -1,8 +1,11 @@
 import * as express from 'express';
 import * as fs from 'fs';
+import * as path from 'path';
 import * as  bodyParser from 'body-parser';
 import * as findInFiles from 'find-in-files';
-import { defaultDir } from '../../config';
+import * as dotenv from 'dotenv';
+const siteConfigEnv = dotenv.config({ path: path.resolve('../.env') });
+const defaultDir = siteConfigEnv.parsed.DEFAULT_DIR;
 /*
 * port 3030で起動
 */
