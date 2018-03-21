@@ -6,7 +6,7 @@ import * as stylelint from 'stylelint';
 import * as postcssImport from 'postcss-import';
 import * as postcssNested from 'postcss-nested';
 import * as dotenv from 'dotenv';
-const siteConfigEnv = dotenv.config({ path: path.resolve('../.env') });
+const siteConfigEnv = dotenv.config({ path: path.resolve('../config/.env') });
 const siteConfig = {
   name: siteConfigEnv.parsed['NAME'],
   defaultDir: siteConfigEnv.parsed['DEFAULT_DIR'],
