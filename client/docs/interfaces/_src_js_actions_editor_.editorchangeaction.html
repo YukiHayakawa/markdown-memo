@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>markdown-memo</title>
+	<title>EditorChangeAction | markdown-memo</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">markdown-memo</a>
+					<a href="../index.html" class="title">markdown-memo</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,152 +53,141 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_src_js_actions_editor_.html">&quot;src/js/actions/editor&quot;</a>
+				</li>
+				<li>
+					<a href="_src_js_actions_editor_.editorchangeaction.html">EditorChangeAction</a>
 				</li>
 			</ul>
-			<h1> markdown-memo</h1>
+			<h1>Interface EditorChangeAction</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="markdown-memo">markdown memo</h1>
-				<h2 id="about">About</h2>
-				<ul>
-					<li>markdownファイルの新規作成</li>
-					<li>markdownファイルの自動保存</li>
-					<li>markdownファイルのプレビュー</li>
-				</ul>
-				<h2 id="architect">Architect</h2>
-				<ul>
-					<li>React</li>
-					<li>Redux</li>
-					<li>Draft.js</li>
-					<li>TypeScript</li>
-					<li>material-ui</li>
-				</ul>
-				<h2 id="develop">develop</h2>
-				<h3 id="api">API</h3>
-				<pre><code><span class="hljs-comment"># change dir</span>
-$ cd<span class="hljs-built_in"> server
-</span><span class="hljs-comment"># install npm package</span>
-$ yarn
-<span class="hljs-comment"># dev start</span>
-$ yarn dev 
-</code></pre><h3 id="client">Client</h3>
-				<pre><code><span class="hljs-comment"># change dir</span>
-$ cd<span class="hljs-built_in"> client
-</span><span class="hljs-comment"># install npm package</span>
-$ yarn
-<span class="hljs-comment"># dev start</span>
-$ yarn dev 
-</code></pre><h2 id="production">production</h2>
-				<ol>
-					<li>Install docker</li>
-					<li>Setting env<pre><code><span class="hljs-meta">$</span><span class="bash"> touch config/.env</span>
-</code></pre><pre><code class="lang-config/.env">NAME=Title
-DEFAULT_DIR=dir/
-API=http://localhost:3030/
-</code></pre>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">Action</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">EditorChangeAction</span>
+							</li>
+						</ul>
 					</li>
-					<li>production start<pre><code><span class="hljs-meta">$</span><span class="bash"> make start</span>
-</code></pre></li>
-				</ol>
-			</div>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_js_actions_editor_.editorchangeaction.html#editorstate" class="tsd-kind-icon">editor<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_src_js_actions_editor_.editorchangeaction.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="editorstate" class="tsd-anchor"></a>
+					<h3>editor<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">editor<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/src/js/actions/editor.ts#L29">src/js/actions/editor.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/_src_js_actions_editor_.actionnames.html#editor_change" class="tsd-signature-type">EDITOR_CHANGE</a></div>
+					<aside class="tsd-sources">
+						<p>Overrides Action.type</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/src/js/actions/editor.ts#L28">src/js/actions/editor.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_history_.html">"src/js/<wbr>History"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_router_.html">"src/js/<wbr>Router"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_actions_editor_.html">"src/js/actions/editor"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_actions_index_.html">"src/js/actions/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_actions_layout_.html">"src/js/actions/layout"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_actions_suggest_.html">"src/js/actions/suggest"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_error_.html">"src/js/components/<wbr>Error"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_header_.html">"src/js/components/<wbr>Header"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_home_.html">"src/js/components/<wbr>Home"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_loading_.html">"src/js/components/<wbr>Loading"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_markdowneditornav_.html">"src/js/components/<wbr>Mark<wbr>Down<wbr>Editor<wbr>Nav"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_markdowneditor_.html">"src/js/components/<wbr>Markdown<wbr>Editor"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_notfile_.html">"src/js/components/<wbr>Not<wbr>File"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_sidenav_.html">"src/js/components/<wbr>Side<wbr>Nav"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_components_sidenavlists_.html">"src/js/components/<wbr>Side<wbr>Nav<wbr>Lists"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_containers_app_.html">"src/js/containers/<wbr>App"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_containers_main_.html">"src/js/containers/<wbr>Main"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_draft_decorator_.html">"src/js/draft/decorator"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_draft_markdown_.html">"src/js/draft/markdown"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_index_.html">"src/js/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_reducers_editor_.html">"src/js/reducers/editor"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_reducers_index_.html">"src/js/reducers/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_reducers_layout_.html">"src/js/reducers/layout"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_reducers_suggest_.html">"src/js/reducers/suggest"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_store_configurestore_.html">"src/js/store/configure<wbr>Store"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_src_js_types_index_.html">"src/js/types/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_webpack_config_.html">"webpack.config"</a>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_src_js_actions_editor_.html">"src/js/actions/editor"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_src_js_actions_editor_.actionnames.html" class="tsd-kind-icon">Action<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_src_js_actions_editor_.config.html" class="tsd-kind-icon">Config</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_src_js_actions_editor_.editorchangeaction.html" class="tsd-kind-icon">Editor<wbr>Change<wbr>Action</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_src_js_actions_editor_.editorchangeaction.html#editorstate" class="tsd-kind-icon">editor<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+								<a href="_src_js_actions_editor_.editorchangeaction.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_src_js_actions_editor_.requesttextfailureaction.html" class="tsd-kind-icon">Request<wbr>Text<wbr>Failure<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_src_js_actions_editor_.requesttextloadingaction.html" class="tsd-kind-icon">Request<wbr>Text<wbr>Loading<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_src_js_actions_editor_.requesttextsuccessaction.html" class="tsd-kind-icon">Request<wbr>Text<wbr>Success<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_src_js_actions_editor_.html#config-1" class="tsd-kind-icon">CONFIG</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_src_js_actions_editor_.html#api" class="tsd-kind-icon">api</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_src_js_actions_editor_.html#defaultdir" class="tsd-kind-icon">default<wbr>Dir</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_src_js_actions_editor_.html#editorchange" class="tsd-kind-icon">editor<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_src_js_actions_editor_.html#gettext" class="tsd-kind-icon">get<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_src_js_actions_editor_.html#requesttextfailure" class="tsd-kind-icon">request<wbr>Text<wbr>Failure</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_src_js_actions_editor_.html#requesttextloading" class="tsd-kind-icon">request<wbr>Text<wbr>Loading</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_src_js_actions_editor_.html#requesttextsuccess" class="tsd-kind-icon">request<wbr>Text<wbr>Success</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -267,7 +256,7 @@ API=http://localhost:3030/
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

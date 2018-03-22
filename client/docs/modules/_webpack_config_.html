@@ -82,12 +82,14 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_webpack_config_.html#port" class="tsd-kind-icon">PORT</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_webpack_config_.html#rules" class="tsd-kind-icon">rules</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_webpack_config_.html#siteconfigenv" class="tsd-kind-icon">site<wbr>Config<wbr>Env</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-object-literal tsd-parent-kind-external-module"><a href="_webpack_config_.html#config-1" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_webpack_config_.html#siteconfig" class="tsd-kind-icon">site<wbr>Config</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,17 +103,27 @@
 					<div class="tsd-signature tsd-kind-icon">PORT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">8088</span><span class="tsd-signature-symbol"> =&nbsp;8088</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L9">webpack.config.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L16">webpack.config.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="rules" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> rules</h3>
-					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_webpack_config_.newuserule.html" class="tsd-signature-type">NewUseRule</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[{enforce: &#x27;pre&#x27;,test: /\.tsx?$/,exclude: /node_modules/,use: {loader: &#x27;tslint-loader&#x27;,options: {quiet: true,failOnError: false,failOnWarning: false,emitError: true,emitWarning: true,},},},{test: /\.tsx?$/,exclude: /node_modules/,use: {loader: &#x27;ts-loader&#x27;,},},{enforce: &#x27;pre&#x27;,exclude: /node_modules/,test: /\.js$/,use: {loader: &#x27;source-map-loader&#x27;,},},{test: /\.(png|woff|woff2|eot|ttf|svg)(\?v&#x3D;[0-9]\.[0-9]\.[0-9])?$/,use: [{loader: &#x27;url-loader&#x27;,},],},{test: /\.css$/,use: [{loader: &#x27;style-loader&#x27;,},{loader: &#x27;css-loader&#x27;,},{loader: &#x27;postcss-loader&#x27;,options: {plugins: (): any &#x3D;&gt; [stylelint(),postcssImport(),autoprefixer({browsers: [&#x27;last 2 versions&#x27;, &#x27;android &gt;&#x3D; 4&#x27;],}),postcssNested,],sourceMap: true,},},],},]</span></div>
+					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_webpack_config_.newuserule.html" class="tsd-signature-type">NewUseRule</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[{enforce: &#x27;pre&#x27;,test: /\.tsx?$/,exclude: /node_modules/,use: {loader: &#x27;tslint-loader&#x27;,options: {quiet: true,failOnError: false,failOnWarning: false,emitError: true,emitWarning: true,},},},{test: /\.tsx?$/,exclude: /node_modules/,use: {loader: &#x27;ts-loader&#x27;,},},{enforce: &#x27;pre&#x27;,exclude: /node_modules/,test: /\.js$/,use: {loader: &#x27;source-map-loader&#x27;,},},{test: /\.(png|woff|woff2|eot|ttf|svg)(\?v&#x3D;[0-9]\.[0-9]\.[0-9])?$/,use: [{loader: &#x27;url-loader&#x27;,},],},{test: /\.html$/,use: [{loader: &#x27;html-loader&#x27;,},],},{test: /\.css$/,use: [{loader: &#x27;style-loader&#x27;,},{loader: &#x27;css-loader&#x27;,},{loader: &#x27;postcss-loader&#x27;,options: {plugins: (): any &#x3D;&gt; [stylelint(),postcssImport(),autoprefixer({browsers: [&#x27;last 2 versions&#x27;, &#x27;android &gt;&#x3D; 4&#x27;],}),postcssNested,],sourceMap: true,},},],},]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L20">webpack.config.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L27">webpack.config.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="siteconfigenv" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> site<wbr>Config<wbr>Env</h3>
+					<div class="tsd-signature tsd-kind-icon">site<wbr>Config<wbr>Env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;dotenv.config({ path: path.resolve(&#x27;../config/.env&#x27;) })</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L9">webpack.config.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +136,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L85">webpack.config.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L100">webpack.config.ts:100</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -133,17 +145,17 @@
 						<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L127">webpack.config.ts:127</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L140">webpack.config.ts:140</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="config-1.context" class="tsd-anchor"></a>
 						<h3>context</h3>
-						<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;client/&#x27;)</span></div>
+						<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;src/&#x27;)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L86">webpack.config.ts:86</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L101">webpack.config.ts:101</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -153,27 +165,27 @@
 						<div class="tsd-signature tsd-kind-icon">devtool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"inline-source-map"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;inline-source-map&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L112">webpack.config.ts:112</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L122">webpack.config.ts:122</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="config-1.entry" class="tsd-anchor"></a>
 						<h3>entry</h3>
-						<div class="tsd-signature tsd-kind-icon">entry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x60;webpack-dev-server/client?http://localhost:${PORT}&#x60;,&#x27;webpack/hot/only-dev-server&#x27;,&#x27;react-hot-loader/patch&#x27;,&#x27;babel-polyfill&#x27;,&#x27;./js/index.tsx&#x27;,&#x27;./css/style.css&#x27;,]</span></div>
+						<div class="tsd-signature tsd-kind-icon">entry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;./js/index.tsx&#x27;,&#x27;./css/style.css&#x27;,]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L87">webpack.config.ts:87</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L102">webpack.config.ts:102</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="config-1.plugins" class="tsd-anchor"></a>
 						<h3>plugins</h3>
-						<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[new webpack.HotModuleReplacementPlugin(),new ProgressBarPlugin(),]</span></div>
+						<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[new webpack.DefinePlugin({CONFIG: JSON.stringify(siteConfig),}),new webpack.HotModuleReplacementPlugin(),new ProgressBarPlugin(),]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L123">webpack.config.ts:123</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L133">webpack.config.ts:133</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -183,7 +195,7 @@
 						<div class="tsd-signature tsd-kind-icon">dev<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L113">webpack.config.ts:113</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L123">webpack.config.ts:123</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -192,7 +204,7 @@
 							<div class="tsd-signature tsd-kind-icon">compress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L117">webpack.config.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L127">webpack.config.ts:127</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -202,7 +214,7 @@
 							<div class="tsd-signature tsd-kind-icon">content<wbr>Base<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(__dirname, &#x27;public&#x27;)</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L118">webpack.config.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L128">webpack.config.ts:128</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -212,7 +224,7 @@
 							<div class="tsd-signature tsd-kind-icon">hot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L114">webpack.config.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L124">webpack.config.ts:124</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -222,7 +234,7 @@
 							<div class="tsd-signature tsd-kind-icon">inline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L116">webpack.config.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L126">webpack.config.ts:126</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -232,7 +244,7 @@
 							<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;PORT</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L115">webpack.config.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L125">webpack.config.ts:125</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -242,7 +254,7 @@
 							<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L119">webpack.config.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L129">webpack.config.ts:129</a></li>
 								</ul>
 							</aside>
 							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -251,7 +263,7 @@
 								<div class="tsd-signature tsd-kind-icon">Access-<wbr><wbr>Control-<wbr><wbr>Allow-<wbr><wbr>Origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;*&quot;</span></div>
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L120">webpack.config.ts:120</a></li>
+										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L130">webpack.config.ts:130</a></li>
 									</ul>
 								</aside>
 							</section>
@@ -263,7 +275,7 @@
 						<div class="tsd-signature tsd-kind-icon">module<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L100">webpack.config.ts:100</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L111">webpack.config.ts:111</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -272,7 +284,7 @@
 							<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_webpack_config_.newuserule.html" class="tsd-signature-type">NewUseRule</a><span class="tsd-signature-symbol">[]</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L101">webpack.config.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L112">webpack.config.ts:112</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -283,36 +295,36 @@
 						<div class="tsd-signature tsd-kind-icon">output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L95">webpack.config.ts:95</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L106">webpack.config.ts:106</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="config-1.output.filename" class="tsd-anchor"></a>
 							<h3>filename</h3>
-							<div class="tsd-signature tsd-kind-icon">filename<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;index.min.js&quot;</span></div>
+							<div class="tsd-signature tsd-kind-icon">filename<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;assets/js/index.min.js&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L96">webpack.config.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L107">webpack.config.ts:107</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="config-1.output.path" class="tsd-anchor"></a>
 							<h3>path</h3>
-							<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;public/assets/dist&#x27;)</span></div>
+							<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;public&#x27;)</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L97">webpack.config.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L108">webpack.config.ts:108</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="config-1.output.publicpath" class="tsd-anchor"></a>
 							<h3>public<wbr>Path</h3>
-							<div class="tsd-signature tsd-kind-icon">public<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&#x60;http://localhost:${PORT}/assets/dist/&#x60;</span></div>
+							<div class="tsd-signature tsd-kind-icon">public<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&#x60;/&#x60;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L98">webpack.config.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L109">webpack.config.ts:109</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -323,16 +335,16 @@
 						<div class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L103">webpack.config.ts:103</a></li>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L114">webpack.config.ts:114</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="config-1.resolve.extensions" class="tsd-anchor"></a>
 							<h3>extensions</h3>
-							<div class="tsd-signature tsd-kind-icon">extensions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;.js&#x27;, &#x27;.ts&#x27;, &#x27;.tsx&#x27;, &#x27;.css&#x27;]</span></div>
+							<div class="tsd-signature tsd-kind-icon">extensions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;.js&#x27;, &#x27;.ts&#x27;, &#x27;.tsx&#x27;, &#x27;.css&#x27;, &#x27;.html&#x27;]</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L104">webpack.config.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L115">webpack.config.ts:115</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -342,40 +354,70 @@
 							<div class="tsd-signature tsd-kind-icon">alias<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L105">webpack.config.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L116">webpack.config.ts:116</a></li>
 								</ul>
 							</aside>
 							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-								<a name="config-1.resolve.alias.config-2" class="tsd-anchor"></a>
-								<h3>config</h3>
-								<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(__dirname, &#x27;config&#x27;)</span></div>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L108">webpack.config.ts:108</a></li>
-									</ul>
-								</aside>
-							</section>
-							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 								<a name="config-1.resolve.alias.css" class="tsd-anchor"></a>
 								<h3>css</h3>
-								<div class="tsd-signature tsd-kind-icon">css<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(__dirname, &#x27;client/css&#x27;)</span></div>
+								<div class="tsd-signature tsd-kind-icon">css<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(__dirname, &#x27;src/css&#x27;)</span></div>
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L107">webpack.config.ts:107</a></li>
+										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L118">webpack.config.ts:118</a></li>
 									</ul>
 								</aside>
 							</section>
 							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 								<a name="config-1.resolve.alias.js" class="tsd-anchor"></a>
 								<h3>js</h3>
-								<div class="tsd-signature tsd-kind-icon">js<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(__dirname, &#x27;client/js&#x27;)</span></div>
+								<div class="tsd-signature tsd-kind-icon">js<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(__dirname, &#x27;src/js&#x27;)</span></div>
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/master/webpack.config.ts#L106">webpack.config.ts:106</a></li>
+										<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L117">webpack.config.ts:117</a></li>
 									</ul>
 								</aside>
 							</section>
 						</section>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="siteconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> site<wbr>Config</h3>
+					<div class="tsd-signature tsd-kind-icon">site<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L10">webpack.config.ts:10</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="siteconfig.api" class="tsd-anchor"></a>
+						<h3>api</h3>
+						<div class="tsd-signature tsd-kind-icon">api<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;siteConfigEnv.parsed[&#x27;API&#x27;] || &#x27;Markdown memo&#x27;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L13">webpack.config.ts:13</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="siteconfig.defaultdir" class="tsd-anchor"></a>
+						<h3>default<wbr>Dir</h3>
+						<div class="tsd-signature tsd-kind-icon">default<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;siteConfigEnv.parsed[&#x27;DEFAULT_DIR&#x27;] || &#x27;markdown/&#x27;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L12">webpack.config.ts:12</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="siteconfig.name" class="tsd-anchor"></a>
+						<h3>name</h3>
+						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;siteConfigEnv.parsed[&#x27;NAME&#x27;] || &#x27;http://localhost:3030/&#x27;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/YukiHayakawa/markdown-memo/blob/ff2bca4/client/webpack.config.ts#L11">webpack.config.ts:11</a></li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 			</section>
@@ -405,8 +447,14 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_webpack_config_.html#rules" class="tsd-kind-icon">rules</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_webpack_config_.html#siteconfigenv" class="tsd-kind-icon">site<wbr>Config<wbr>Env</a>
+					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
 						<a href="_webpack_config_.html#config-1" class="tsd-kind-icon">config</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_webpack_config_.html#siteconfig" class="tsd-kind-icon">site<wbr>Config</a>
 					</li>
 				</ul>
 			</nav>
