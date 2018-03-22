@@ -9,11 +9,39 @@
 - Redux
 - Draft.js
 - TypeScript
+- material-ui
 
 ## develop
+### API
 ```
+# change dir
+$ cd server
 # install npm package
 $ yarn
 # dev start
 $ yarn dev 
+```
+### Client
+```
+# change dir
+$ cd client
+# install npm package
+$ yarn
+# dev start
+$ yarn dev 
+```
+## production
+1. Install docker
+2. Setting env
+```
+$ touch config/.env
+```
+```config/.env
+NAME=Title
+DEFAULT_DIR=dir/
+API=http://localhost:3030/
+```
+3. production start
+```
+$ make start
 ```
