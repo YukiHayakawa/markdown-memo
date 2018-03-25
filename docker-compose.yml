@@ -1,4 +1,4 @@
-version: '2'
+version: '3.3'
 services:
   nginx:
     build: ./nginx
@@ -10,16 +10,17 @@ services:
        - ./nginx/conf.d:/etc/nginx/conf.d
        - ./client:/var/www
     environment:
-      VIRTUAL_HOST: memo.0823.work
-      LETSENCRYPT_HOST: memo.0823.work
-      LETSENCRYPT_EMAIL: yuki.hayakawa0823@gmail.com
+      VIRTUAL_HOST: ${HOST:-localhost}
+      LETSENCRYPT_HOST: ${HOST:-localhost}
+      LETSENCRYPT_EMAIL: ${EMAIL:-hoge@hoge.com}
     restart: always
   server:
     image: node:9.8-alpine
     container_name: server
+    env_file: .env
     volumes:
       - ./server:/src
-      - ./config:/config
+      - ./.env:/.env
     working_dir: /src
     command: [sh, -c, yarn install && yarn build && yarn start]
     ports:
@@ -28,9 +29,10 @@ services:
   client:
     image: node:9.8-alpine
     container_name: client
+    env_file: .env
     volumes:
       - ./client:/src
-      - ./config:/config
+      - ./.env:/.env
     working_dir: /src
     command: [sh, -c, yarn install && yarn build]
 networks:

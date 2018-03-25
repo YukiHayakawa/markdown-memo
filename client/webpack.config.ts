@@ -6,7 +6,7 @@ import * as stylelint from 'stylelint';
 import * as postcssImport from 'postcss-import';
 import * as postcssNested from 'postcss-nested';
 import * as dotenv from 'dotenv';
-const siteConfigEnv = dotenv.config({ path: path.resolve('../config/.env') });
+const siteConfigEnv = dotenv.config({ path: path.resolve('../.env') });
 const siteConfig = {
   name: siteConfigEnv.parsed['NAME'] || 'http://localhost:3030/',
   defaultDir: siteConfigEnv.parsed['DEFAULT_DIR'] || 'markdown/',

@@ -34,12 +34,15 @@ $ yarn dev
 1. Install docker
 2. Setting env
 ```
-$ touch config/.env
+$ touch .env
 ```
-```config/.env
+```.env
+# .env
 NAME=Title
 DEFAULT_DIR=dir/
 API=http://localhost:3030/
+HOST=localhost
+EMAIL=hoge@hoge.com
 ```
 3. production start
 ```

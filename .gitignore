@@ -15,5 +15,5 @@ client/public/assets/js
 server/markdown/*
 server/public/*
 
-# config
-config
+# env
+.env

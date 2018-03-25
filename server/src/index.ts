@@ -4,7 +4,7 @@ import * as path from 'path';
 import * as  bodyParser from 'body-parser';
 import * as findInFiles from 'find-in-files';
 import * as dotenv from 'dotenv';
-const siteConfigEnv = dotenv.config({ path: path.resolve('../config/.env') });
+const siteConfigEnv = dotenv.config({ path: path.resolve('../.env') });
 const defaultDir = siteConfigEnv.parsed.DEFAULT_DIR;
 /*
 * port 3030で起動
@@ -181,5 +181,9 @@ app.get('*', (req: express.Request, res: express.Response) => {
 * サーバー起動
 */
 app.listen(PORT, () => {
+  // ディレクトリがなかったら作成する
+  if (!fs.existsSync(defaultDir)) {
+    fs.mkdirSync(defaultDir);
+  }
   console.log(`listening on *:${PORT}`);
 });
