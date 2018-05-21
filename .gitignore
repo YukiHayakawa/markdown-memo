@@ -17,3 +17,4 @@ server/public/*
 
 # env
 .env
+.DS_Store
