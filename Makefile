@@ -1,24 +1,25 @@
 PROJECT = markedown_memo
 
 .PHONY: start
-start: 
-	docker-compose up -d --build && \
-	docker logs -f client
+start:
+	docker-compose -p $(PROJECT) up -d --build && \
+	docker logs -f markdown-memo-client
 
 .PHONY: restart
 restart:
-	docker stop client server nginx && \
-	docker rm client server nginx && \
-	docker-compose up -d --build && \
-	docker logs -f client
+	docker-compose -p $(PROJECT) kill && \
+	docker-compose -p $(PROJECT) rm -f && \
+	docker-compose -p $(PROJECT) up -d --build && \
+	docker logs -f markdown-memo-client
 
-.PHONY: rm
-rm: 
-	docker rm client server nginx
+.PHONY: logs
+logs:
+	docker-compose -p $(PROJECT) logs
 
-.PHONY: stop
-stop: 
-	docker stop client server nginx
+.PHONY: kill
+kill:
+	docker-compose -p $(PROJECT) kill
 
 .PHONY: ps
-
+ps:
+	docker-compose -p $(PROJECT) ps

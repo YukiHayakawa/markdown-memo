@@ -2,7 +2,7 @@ version: '3.3'
 services:
   nginx:
     build: ./nginx
-    container_name: nginx
+    container_name: markdown-memo-nginx
     depends_on:
       - server
       - client
@@ -15,8 +15,8 @@ services:
       LETSENCRYPT_EMAIL: ${EMAIL:-hoge@hoge.com}
     restart: always
   server:
-    image: node:9.8-alpine
-    container_name: server
+    image: node:8.11-alpine
+    container_name: markdown-memo-server
     env_file: .env
     volumes:
       - ./server:/src
@@ -27,8 +27,8 @@ services:
       - "3030:3030"
     restart: always
   client:
-    image: node:9.8-alpine
-    container_name: client
+    image: node:8.11-alpine
+    container_name: markdown-memo-client
     env_file: .env
     volumes:
       - ./client:/src
